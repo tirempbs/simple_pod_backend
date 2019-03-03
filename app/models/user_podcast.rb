@@ -1,0 +1,2 @@
+class UserPodcast < ApplicationRecord
+end
