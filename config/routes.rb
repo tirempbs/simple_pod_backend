@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
       post '/podcasts/search/:q', to: 'podcasts#search'
       post '/podcasts/getPodcasts/:id', to: 'podcasts#getPodcasts'
+      post '/podcasts/getEpisode/:id', to: 'podcasts#getEpisode'
     end
   end
 end
