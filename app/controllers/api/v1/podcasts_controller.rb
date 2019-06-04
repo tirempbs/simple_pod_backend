@@ -55,7 +55,7 @@ class Api::V1::PodcastsController < ApplicationController
 
     def getEpisode
       id = params[:id]
-      response = RestClient.get("https://listennotes.p.rapidapi.com/api/v1/episodes/#{id}", :'X-RapidAPI-Key' => '8l6hDCXGyVmshMAHyPH3qzr1wJQop1XTpdhjsnpxpnu2K2vnzx')
+      response = RestClient.get("https://listennotes.p.rapidapi.com/api/v1/episodes/#{id}", :'X-RapidAPI-Key' => '8l6hDCXGyVmshMAHyPH3qzr1wJQop1XTpdhjsnpxpnu2K2vnzx' )
       @results = JSON.parse(response)
       render json: @results
     end
