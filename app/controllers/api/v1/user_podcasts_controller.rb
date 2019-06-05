@@ -1,4 +1,4 @@
-class Api::V1::userpodcastPodcastsController < ApplicationController
+class Api::V1::UserPodcastsController < ApplicationController
     before_action :find_userpodcast, only: [:update]
 
     def index
