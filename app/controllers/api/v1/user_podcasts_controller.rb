@@ -2,7 +2,7 @@ class Api::V1::userpodcastPodcastsController < ApplicationController
     before_action :find_userpodcast, only: [:update]
 
     def index
-        @userpodcasts = Userpodcast.all
+        @userpodcasts = UserPodcast.all
         render json: @userpodcasts
     end
 
@@ -22,6 +22,6 @@ class Api::V1::userpodcastPodcastsController < ApplicationController
     end
 
     def find_userpodcast
-        @userpodcast = Userpodcast.find_by(id: params[:id])
+        @userpodcast = UserPodcast.find_by(id: params[:id])
     end
 end
